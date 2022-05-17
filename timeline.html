@@ -127,7 +127,7 @@
 	  else if (p.description) var desc = p.description;
 	  else var desc = "";
 	  var subtitle = htmlspecialchars(desc);
-	  if (p.onNow) s += `<a href='/play/stream/channel/${c.uuid}?title=${c.name}'><div class='item ${colour}' style='width: ${pc}%;' title='${subtitle}'>${p.title}</div></a>`;
+	  if (p.onNow) s += `<a href='/stream/channel/${c.uuid}'><div class='item ${colour}' style='width: ${pc}%;' title='${subtitle}'>${p.title}</div></a>`;
 	  else if (p.dvrState) s += `<div class='item  ${colour}' style='width: ${pc}%;' title='${subtitle}'>${p.title}</div>`;
 	  else {
 	    var esctitle = htmlspecialchars(p.title);
